@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
                   "html:target/default-html-reports",
         "pretty"},
         features = "src/test/resources/features",
-        glue = "step_definitions",
+        glue = "com/Yolcu360_Login/step_definitions",
         dryRun =false,
-        tags="@login"
+        tags="@deneme"
 )
 public class TestRunner {
 }

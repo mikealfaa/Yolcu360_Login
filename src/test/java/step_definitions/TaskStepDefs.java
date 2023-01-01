@@ -19,6 +19,7 @@ public class TaskStepDefs extends Actions {
 
     @Given("the user click Giriş Yap button1")
     public void the_user_click_Giriş_Yap_button1() {
+        BrowserUtils.waitFor(5);
         loginPage.Girişyapbutton1Loc.click();
         BrowserUtils.waitFor(5);
     }
@@ -62,4 +63,9 @@ public class TaskStepDefs extends Actions {
         assertEmptyLogin();
     }
 
+    @When("the user changes language {string}")
+    public void theUserChangesLanguage(String language) {
+        BrowserUtils.waitFor(10);
+        loginPage.changeLanguage(language);
+    }
 }
