@@ -15,6 +15,8 @@ public class TaskStepDefs extends Actions {
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
         Driver.get().get(ConfigurationReader.get("url"));
+        System.out.println("Driver.get().getCurrentUrl() = " + Driver.get().getCurrentUrl());
+        System.out.println("Driver.get().getTitle() = " + Driver.get().getTitle());
     }
 
     @Given("the user click Giriş Yap button1")

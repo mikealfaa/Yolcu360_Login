@@ -2,6 +2,7 @@ package utilities;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,12 +35,10 @@ public class Driver {
                     driver = new ChromeDriver();
                     break;
                 case "chrome-headless":
-                  //  ChromeOptions chromeOptions1 = new ChromeOptions();
-                  //  chromeOptions1.addArguments("headless");
-                  //  chromeOptions1.addArguments("window-size=1920,1080");
 
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    Driver.get().manage().window().setSize(new Dimension(1440,900));
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
