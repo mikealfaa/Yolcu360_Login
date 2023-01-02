@@ -21,15 +21,15 @@ public class TaskStepDefs extends Actions {
 
     @Given("the user click Giriş Yap button1")
     public void the_user_click_Giriş_Yap_button1() {
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
         loginPage.Girişyapbutton1Loc.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
     }
 
     @Given("the user click Giriş Yap button2")
     public void the_user_click_Giriş_Yap_button2() {
         loginPage.Girişyapbutton2Loc.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
     }
 
     @Given("the user enters the valid {string} and valid {string} information")
@@ -40,7 +40,7 @@ public class TaskStepDefs extends Actions {
     @When("the user click Giriş Yap login button")
     public void the_user_click_Giriş_Yap_login_button() {
         loginPage.GirişyapLoginLoc.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
     }
 
     @Then("the user should be able to login")
@@ -67,7 +67,7 @@ public class TaskStepDefs extends Actions {
 
     @When("the user changes language {string}")
     public void theUserChangesLanguage(String language) {
-        BrowserUtils.waitFor(10);
+        BrowserUtils.waitFor(5);
         loginPage.changeLanguage(language);
     }
 }
