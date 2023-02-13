@@ -6,7 +6,7 @@ Feature: user should be able to login with valid credential
     And the user click Giriş Yap button1
     And the user click Giriş Yap button2
 
-@deneme @deneme2
+@deneme @deneme3
 Scenario:Login as a user
 And the user enters the valid "email" and valid "password" information
 When the user click Giriş Yap login button
